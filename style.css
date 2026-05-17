@@ -1,0 +1,766 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: instrument sans, sans-serif;
+    background-color: #FDF0D5;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* =========================================
+   ===============  NAVBAR  ================
+   ========================================= */
+
+header {
+    background-color: #3A3335;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 32px 16px;
+}
+
+section.hero {
+    padding: 0px;
+    margin: 0 0 16px 0;
+}
+
+.banner img {
+    width: 100%;
+    height: 346px;
+    object-fit: cover;
+}
+
+header ul {
+margin: 0;
+padding: 0;
+list-style: none;
+display: Flex;
+gap: 16px;
+}
+
+header a {
+text-decoration: none;
+text-transform: uppercase;
+color: #fff;
+}
+
+header a:hover {
+text-decoration: underline;
+color: #F9AA18;
+text-decoration-thickness: 5px;
+text-decoration-color: #D81E5B;
+}
+
+header p {
+margin: 0;
+color: #fff;
+text-align: center;
+font-weight: normal;
+font-size: 14px;
+}
+
+header a {
+    margin: 0;
+    color: #fff;
+    text-align: center;
+    font-weight: normal;
+    font-size: 14px;
+}
+
+/* =========================================
+   ===============  HOME  ================
+   ========================================= */
+
+.descrizione-sito h2 {
+    margin: 0 auto;
+    color: #000000;
+    text-align: left;
+    font-weight: bold;
+    font-size: 24px;
+    font-family: instrument sans, sans-serif;
+    padding: 80px 50px;           
+    max-width: 600px;          
+    text-transform: uppercase;
+    line-height: 1.4;          
+}
+
+.Pagina_centrale_home h1 {
+    margin: 0 auto;
+    color: #D81E5B;
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+    font-family: instrument sans, sans-serif;
+    padding: 54px 20px;
+    max-width: 90%;
+    line-height: 1.4;
+    text-transform: uppercase;
+}
+
+.Pagina_centrale_home {
+    background-color: #3A3335;
+    margin: 0 auto 60px;
+    width: 100%;
+}
+
+
+.centro_della_home {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: start;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 260px));
+    gap: 50px;
+    padding: 54px 16px;
+}
+
+.centro_della_home p {
+    margin: 22px auto 0;
+    text-align: center;
+    width: fit-content;
+    grid-column: 1 / -1;
+    justify-self: center;
+    font-size: 12px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+
+.centro_della_home h3 {
+    margin: 40px auto 0;
+    text-align: center;
+    width: fit-content;
+    grid-column: 1 / -1;
+    justify-self: center;
+    font-size: 14px;
+    color: #FFFFFF;
+    background-color: #D81E5B;
+    border-radius: 80px;
+    padding: 10px 16px;
+    text-transform: uppercase;
+}
+
+.manuale {
+    width: 260px;
+    height: 460px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 0px;
+    text-align: center;
+    border-radius: 32px;
+    border: 2px solid #ECECEC;
+    padding: 34px 16px;
+    box-sizing: border-box;
+    transition: background-color 200ms ease, box-shadow 200ms ease, transform 200ms ease;
+}
+
+.manuale img {
+    width: 168px;
+    height: 240px;
+    object-fit: cover;
+}
+
+.manuale .sopra {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.manuale img {
+    margin: 0 auto;
+    object-position: center center;
+    display: block;
+}
+
+.manuale:hover {
+    background-color: #ECECEC;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    transform: translateY(-4px);
+}
+
+.manuale:hover h3,
+.manuale:hover p {
+    color: #000000;
+}
+
+
+.manuale h3,
+.manuale p {
+    margin: 0;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.informazioni_categoria {
+    width: fit-content;
+    text-align: center;
+    padding: 40px 16px;
+    margin-top: 20px;
+    grid-column: 1 / -1;
+    justify-self: center;
+}
+
+.informazioni_categoria p {
+    margin: 0;
+}
+
+.informazioni_categoria p a {
+    display: inline-block;
+    text-align: center;
+    font-size: 15px;
+    text-decoration: none;
+    color: #D81E5B;
+}
+
+.informazioni_categoria p a:hover {
+    text-decoration: underline;
+    color: #F9AA18;
+    text-decoration-thickness: 2px;
+    text-decoration-color: #D81E5B;
+
+}
+
+.collegamento_alla_pagina {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+
+.collegamento_alla_pagina:hover {
+    text-decoration: none;
+}
+
+/* =========================================
+   ===============  INFORMAZIONI  ================
+   ========================================= */
+
+   .Scritta_introduzione {
+    margin-top: 110px;
+    }
+
+.scritte_informazioni_info {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: start;
+    gap: 15px;
+    padding: 54px 16px;
+}
+
+    .scritte_informazioni_info p {
+    font-size: 20px;
+    line-height: 140%
+    }
+
+    .scritte_informazioni_info h1 {
+    font-size: 28px;
+    padding: 30px 0;
+    }
+
+    .scritte_informazioni_info h2 {
+    font-size: 28px;
+    font-weight: normal;
+    padding-top: 10px;
+    line-height: 140%
+    }
+
+    .Scritta_manuale_spiegazione {
+        margin-top: 180px;
+    }
+
+    .testo_e_foto__content {
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+        flex: 1 1 320px;
+        min-width: 260px;
+        margin-top: 0px
+    }
+
+    .testo_e_foto{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        gap: 24px;
+        margin-top: 0px;
+    }
+
+    .testo_e_foto img {
+        width: 300px;
+        max-width: 100%;
+        height: auto;
+        object-fit: cover;
+        margin-top: 0px
+    }
+
+    /* =========================================
+   ===============  GIOCHI  ================
+   ========================================= */
+
+.banner1 img {
+    width: 100%;
+    height: 346px;
+    object-fit: cover;
+    object-position: center bottom;
+}
+
+   .Pagina_centrale_Giochi h1 {
+    width: fit-content;
+    margin: 0 auto;
+    color: #D81E5B;
+    text-align: left;
+    font-weight: bold;
+    font-size: 24px;
+    font-family: instrument sans, sans-serif;
+    padding: 54px 0px 0px 50px;
+    max-width: 90%;
+    line-height: 1.4;
+    text-transform: uppercase;
+    margin-left: 250px;
+}
+
+.Pagina_centrale_Giochi {
+    background-color: #3A3335;
+    margin: 0 auto 60px;
+    width: 100%;
+    margin-top: 60px;
+}
+
+.manuale1 {
+    width: 210px;
+    height: 390px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 0px;
+    text-align: center;
+    border-radius: 32px;
+    border: 2px solid #ECECEC;
+    padding: 34px 16px;
+    box-sizing: border-box;
+    transition: background-color 200ms ease, box-shadow 200ms ease, transform 200ms ease;
+}
+
+.manuale1 img {
+    width: 130px;
+    height: 190px;
+    object-fit: cover;
+    margin: 0 auto;
+    object-position: center center;
+    display: block;
+}
+
+.manuale1 .sopra {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.manuale1:hover {
+    background-color: #ECECEC;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    transform: translateY(-4px);
+}
+
+.manuale1:hover h3,
+.manuale1:hover p {
+    color: #000000;
+}
+
+
+.manuale1 h3,
+.manuale1 p {
+    margin: 0;
+    justify-content: center;
+    margin-top: 20px;
+    text-align: left;
+}
+
+.centro_della_home1 {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: start;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 190px));
+    gap: 35px;
+    padding: 30px 16px 0px 16px;
+}
+
+.centro_della_home1 p {
+    margin: 22px auto 0;
+    text-align: center;
+    width: fit-content;
+    grid-column: 1 / -1;
+    justify-self: center;
+    font-size: 14px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    max-width: 80%;
+    
+}
+
+.centro_della_home1 h3 {
+    margin: 40px auto 0;
+    text-align: center;
+    width: fit-content;
+    grid-column: 1 / -1;
+    justify-self: center;
+    font-size: 14px;
+    color: #FFFFFF;
+    background-color: #D81E5B;
+    border-radius: 80px;
+    padding: 10px 16px;
+    text-transform: uppercase;
+}
+
+.informazioni_categoria1 {
+    width: fit-content;
+    text-align: center;
+    padding: 40px 16px;
+    margin-top: 20px;
+    grid-column: 1 / -1;
+    justify-self: right;
+    padding-right: 280px;
+}
+
+.informazioni_categoria1 p {
+    margin: 0;
+}
+
+.informazioni_categoria1 p a {
+    display: inline-block;
+    text-align: center;
+    font-size: 15px;
+    color: #D81E5B;
+}
+
+.informazioni_categoria1 p a:hover {
+    text-decoration: underline;
+    color: #F9AA18;
+    text-decoration-thickness: 2px;
+    text-decoration-color: #D81E5B;
+}
+
+.Pagina_centrale_Giochi h1 a {
+    display: inline-block;
+    text-align: center;
+    font-size: 24px;
+    color: #D81E5B;
+    text-decoration: none;
+}
+
+.Pagina_centrale_Giochi h1 a:hover {
+    text-decoration: underline;
+    color: #F9AA18;
+    text-decoration-thickness: 2px;
+    text-decoration-color: #D81E5B;
+}
+
+
+.sotto_card {
+    padding: 0px 10px;
+}
+
+.sopra_card1 img {
+    width: 160px;
+    height: 150px;
+    object-fit: cover;
+}
+
+/* =========================================
+   ===============  CATEGORIA  ================
+   ========================================= */
+
+   .banner2 img {
+    width: 100%;
+    height: 346px;
+    object-fit: cover;
+    object-position: 100% 55%;
+}
+
+   .Pagina_centrale_Giochi h2 {
+    margin: 0 auto;
+    color: #D81E5B;
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+    font-family: instrument sans, sans-serif;
+    padding-top: 60px;
+    max-width: 100%;
+    line-height: 1.4;
+    text-transform: uppercase;
+}
+
+.manuale2 {
+    width: 210px;
+    height: 390px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 0px;
+    text-align: center;
+    border-radius: 32px;
+    border: 2px solid #ECECEC;
+    padding: 34px 16px;
+    box-sizing: border-box;
+    transition: background-color 200ms ease, box-shadow 200ms ease, transform 200ms ease;
+}
+
+.manuale2 img {
+    width: 130px;
+    height: 190px;
+    object-fit: cover;
+    margin: 0 auto;
+    object-position: center center;
+    display: block;
+}
+
+.manuale2 .sopra {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.manuale2:hover {
+    background-color: #ECECEC;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    transform: translateY(-4px);
+}
+
+.manuale2:hover h3,
+.manuale2:hover p,
+.manuale2:hover .sotto p {
+    color: #000000 !important;
+}
+
+.manuale2 p {
+    margin: 0;
+    justify-content: center;
+    margin-top: 20px;
+    text-align: left;
+}
+
+.centro_della_Categoria {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    align-items: stretch;
+    grid-template-columns: repeat(3, minmax(220px, 1fr));
+    gap: 30px;
+    padding: 54px 16px;
+}
+
+.centro_della_Categoria a {
+    width: 100%;
+}
+
+.section.grid {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: start;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 260px));
+    gap: 50px;
+    padding: 54px 16px;
+}
+
+.section.grid p {
+    margin: 22px auto 0;
+    text-align: center;
+    width: fit-content;
+    grid-column: 1 / -1;
+    justify-self: center;
+    font-size: 14px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    max-width: 80%;
+    
+}
+
+.section.grid h3 {
+    margin: 40px auto 0;
+    text-align: center;
+    width: fit-content;
+    grid-column: 1 / -1;
+    justify-self: center;
+    font-size: 14px;
+    color: #FFFFFF;
+    background-color: #D81E5B;
+    border-radius: 80px;
+    padding: 10px 16px;
+    text-transform: uppercase;
+}
+
+
+/* =========================================
+   ===============  FOOTER  ================
+   ========================================= */
+
+.contorno_esterno_footer {
+    padding: 10px 0;
+    margin: 0 auto;
+}
+
+footer {
+    background-color: #3A3335;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 16px;
+    margin: 0;
+}
+
+footer nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: Flex;
+    align-items: center;
+    gap: 16px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #111;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    text-decoration: underline;
+    color: #F9AA18;
+    text-decoration-thickness: 2px;
+    text-decoration-color: #D81E5B;
+}
+
+footer nav a {
+    color: #ffffff;
+}
+
+/* =========================================
+===============  RESPONSIVE  ================
+   ========================================= */
+
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        gap: 16px;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    
+    header p,
+    header a {
+        text-align: left;
+    }
+    
+    .Pagina_centrale_home h3 {
+        font-size: 14px;
+    }
+
+    .Pagina_centrale_home p {
+        font-size: 14px;
+        padding: 0px 10px;
+    }
+    
+    .descrizione-sito h2 {
+        margin: 0 auto;
+        color: #000000;
+        text-align: left;
+        font-weight: bold;
+        font-size: 24px;
+        font-family: instrument sans, sans-serif;
+        padding: 50px 20px;
+        max-width: 90%;
+        line-height: 1.4;
+        text-transform: uppercase;
+    }
+
+    footer nav ul {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .scritte_informazioni_info {
+        max-width: 60%;
+        margin: 0 auto;
+        padding: 20px 16px;
+    }
+
+    .Scritta_manuale_spiegazione {
+        margin-top: 70px;
+    }
+
+    .Scritta_introduzione {
+    margin-top: 90px;
+    }
+
+    .Pagina_centrale_Giochi h1 {
+    margin: 0 auto;
+    color: #D81E5B;
+    text-align: left;
+    font-weight: bold;
+    font-size: 24px;
+    font-family: instrument sans, sans-serif;
+    padding: 54px 20px 0px 20px;
+    max-width: 50%;
+    line-height: 1.4;
+    text-transform: uppercase;
+}
+
+.informazioni_categoria1 {
+    width: fit-content;
+    text-align: center;
+    padding: 40px 16px;
+    margin-top: 20px;
+    grid-column: 1 / -1;
+    justify-self: center;
+}
+
+@media (max-width: 900px) {
+    .centro_della_Categoria {
+        grid-template-columns: repeat(2, minmax(220px, 1fr));
+    }
+}
+
+@media (max-width: 600px) {
+    .centro_della_Categoria {
+        grid-template-columns: 1fr;
+    }
+}
+
+}
